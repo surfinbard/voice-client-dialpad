@@ -74,6 +74,10 @@ select {
   margin-bottom: 10px;
 }
 
+.cute-font {
+  font-family: "Share Tech Mono", "Courier New", Courier, fixed-width;
+}
+
 /* Center Column */
 input {
   font-family: Helvetica-LightOblique, Helvetica, sans-serif;
@@ -140,6 +144,10 @@ div#volume-indicators > div {
 
 .justify-center {
   justify-content: center;
+}
+
+.mt-05 {
+  margin-top: 0.5rem;
 }
 
 .mt-1 {

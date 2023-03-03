@@ -246,13 +246,13 @@
 
   // Activity log
   function log(message) {
-    logDiv.innerHTML += `<p class="log-entry">&gt;&nbsp; ${message} </p>`;
+    logDiv.innerHTML += `<p class="log-entry">&gt;&nbsp;${message} </p>`;
     logDiv.scrollTop = logDiv.scrollHeight;
   }
 
   function setClientNameUI(clientName) {
     var div = document.getElementById("client-name");
-    div.innerHTML = `Your client name: <strong>oblongata</strong>`;
+    div.innerHTML = `<p class="cute-font">your username <strong>oblongata</strong></p>`;
   }
 
   function resetIncomingCallUI() {
