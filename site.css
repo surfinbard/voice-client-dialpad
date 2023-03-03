@@ -85,7 +85,7 @@ input {
   font-size: 1em;
   width: 100%;
   height: 2.5em;
-  padding: 0;
+  padding: 0 5;
   display: block;
   margin: 10px 0;
   transform: scale(.96);
@@ -109,12 +109,15 @@ div#volume-indicators > div {
   padding: 0 1.5em;
 }
 
+
+
 #log {
   text-align: left;
   border: 1px solid #686865;
   padding: 10px;
   height: 9.5em;
   overflow-y: scroll;
+  display: grid;
 }
 
 .log-entry {
