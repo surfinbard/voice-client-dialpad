@@ -182,6 +182,7 @@
   function updateUIDisconnectedOutgoingCall() {
     log("Call disconnected.");
     callButton.disabled = false;
+    callButton.classList.remove("hide");
     outgoingCallHangupButton.classList.add("hide");
     volumeIndicators.classList.add("hide");
     callStarted = false;
