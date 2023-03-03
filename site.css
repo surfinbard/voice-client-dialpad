@@ -131,7 +131,8 @@ div#volume-indicators > div {
 }
 
 #button-hangup-incoming{
-  display: inline-block;
+  display: flex;
+  align-items: center;
   background-color: #ec2f0e;
   padding: 4px 30px;
   margin: 10px;
@@ -230,7 +231,8 @@ button:disabled {
 }
 
 #hangup {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   background-color: #ec2f0e;
   padding: 4px 30px;
   margin: 10px;
