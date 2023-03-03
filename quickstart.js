@@ -38,6 +38,16 @@
     makeOutgoingCall();
     console.log(e);
   };
+
+  phoneNumberInput.onkeydown = enterToCall;
+  
+  function enterToCall (e) {
+    if (e.key === 'Enter' || e.keyCode === 13) {
+      e.preventDefault();
+      callButton.classList.add("hide");
+      outgoingCallHangupButton.classList.remove("hide");
+      makeOutgoingCall();
+    }}
   
   $('.fa-long-arrow-left').on('click', function() {
     var input = document.getElementById("phone-number");
@@ -49,7 +59,6 @@
   getAudioDevicesButton.onclick = getAudioDevices;
   speakerDevices.addEventListener("change", updateOutputDevice);
   ringtoneDevices.addEventListener("change", updateRingtoneDevice);
-  
 
   // SETUP STEP 1:
   // Browser client should be started after a user gesture
