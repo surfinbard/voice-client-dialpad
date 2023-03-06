@@ -184,7 +184,6 @@
   function updateUIDisconnectedOutgoingCall() {
     log("Call disconnected.");
     callButton.disabled = false;
-    phoneNumberInput.setAttribute(value, null);
     dialpad.classList.add("disabled-dialpad");
     callButton.classList.remove("hide");
     outgoingCallHangupButton.classList.add("hide");
