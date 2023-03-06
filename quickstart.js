@@ -24,6 +24,7 @@
   const phoneNumberInput = document.getElementById("phone-number");
   const incomingPhoneNumberEl = document.getElementById("incoming-number");
   const startupButton = document.getElementById("startup-button");
+  const dialpad = document.getElementById("dialpad");
 
   let device;
   let token;
@@ -173,6 +174,7 @@
   function updateUIAcceptedOutgoingCall(call) {
     log("Call in progress ...");
     callButton.disabled = true;
+    dialpad.classList.remove("disabled-dialpad");
     outgoingCallHangupButton.classList.remove("hide");
     volumeIndicators.classList.remove("hide");
     bindVolumeIndicators(call);
@@ -182,6 +184,8 @@
   function updateUIDisconnectedOutgoingCall() {
     log("Call disconnected.");
     callButton.disabled = false;
+    phoneNumberInput.setAttribute(value, null);
+    dialpad.classList.add("disabled-dialpad");
     callButton.classList.remove("hide");
     outgoingCallHangupButton.classList.add("hide");
     volumeIndicators.classList.add("hide");

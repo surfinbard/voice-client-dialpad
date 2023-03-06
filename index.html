@@ -9,7 +9,8 @@
   <body>
     <header>
       <h1>Call ALL the people!</h1>
-      <div class="d-flex justify-center">
+      <p>Start calls to enable dialpad.</p>
+      <div class="d-flex justify-center mt-1">
         <button id="startup-button" class="mr-1">Start-up</button>
         <button id="refresh-button" onclick="location.reload()">Refresh</button>
       </div>
@@ -34,46 +35,50 @@
             <div type=submit>
               <input id="phone-number" class="phone-number" type="text" />
             </div>
-            <div class="row">
-              <div class="digit" id="one">1</div>
-              <div class="digit" id="two">2 <div class="sub">ABC</div>
+            <div id="dialpad" class="disabled-dialpad">
+              <div class="row">
+                <div class="digit pad-item" id="one">1</div>
+                <div class="digit pad-item" id="two">2 <div class="sub">ABC</div>
+                </div>
+                <div class="digit pad-item" id="three">3 <div class="sub">DEF</div>
+                </div>
               </div>
-              <div class="digit" id="three">3 <div class="sub">DEF</div>
+              <div class="row">
+                <div class="digit pad-item" id="four">4 <div class="sub">GHI</div>
+                </div>
+                <div class="digit pad-item" id="five">5 <div class="sub">JKL</div>
+                </div>
+                <div class="digit pad-item">6 <div class="sub">MNO</div>
+                </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="digit" id="four">4 <div class="sub">GHI</div>
+              <div class="row">
+                <div class="digit pad-item">7 <div class="sub">PQRS</div>
+                </div>
+                <div class="digit pad-item">8 <div class="sub">TUV</div>
+                </div>
+                <div class="digit pad-item">9 <div class="sub">WXYZ</div>
+                </div>
               </div>
-              <div class="digit" id="five">5 <div class="sub">JKL</div>
+              <div class="row">
+                <div class="digit pad-item">* </div>
+                <div class="digit pad-item">0 </div>
+                <div class="digit pad-item"># </div>
               </div>
-              <div class="digit">6 <div class="sub">MNO</div>
+              <div class="botrow">
+                <div class="digit pad-item">+ </div>
+                <div id="button-call" type=submit>
+                  <i class="fa fa-phone"></i>
+                </div>
+                <div id="hangup" class="hide pad-item" type=submit>
+                  <i id="hangup-icon" class="fa fa-phone"></i>
+                </div>
+                <div id="button-hangup-incoming" class="hide pad-item" type=submit>
+                  <i id="hangup-icon" class="fa fa-phone"></i>
+                </div>
+                <div class="pad-item">
+                  <i class="fa fa-long-arrow-left dig" id="backspace" type=submit></i>
+                </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="digit">7 <div class="sub">PQRS</div>
-              </div>
-              <div class="digit">8 <div class="sub">TUV</div>
-              </div>
-              <div class="digit">9 <div class="sub">WXYZ</div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="digit">* </div>
-              <div class="digit">0 </div>
-              <div class="digit"># </div>
-            </div>
-            <div class="botrow">
-              <div class="digit">+ </div>
-              <div id="button-call" type=submit>
-                <i class="fa fa-phone"></i>
-              </div>
-              <div id="hangup" class="hide" type=submit>
-                <i id="hangup-icon" class="fa fa-phone"></i>
-              </div>
-              <div id="button-hangup-incoming" class="hide" type=submit>
-                <i id="hangup-icon" class="fa fa-phone"></i>
-              </div>
-              <i class="fa fa-long-arrow-left dig" id="backspace" type=submit></i>
             </div>
           </form>
           <div class="row">
